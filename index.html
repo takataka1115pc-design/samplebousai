@@ -35,7 +35,7 @@
         .container {
             max-width: 800px;
             margin: 50px auto;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -86,18 +86,25 @@
             transform: translateY(-2px);
         }
 
-        /* タイムライン表示エリア */
-        .timeline-box {
+        /* 投稿例エリアのデザイン */
+        .example-box {
             margin-top: 30px;
             border-top: 1px solid #ddd;
             padding-top: 20px;
-            min-height: 600px; /* 高さを確保 */
         }
-        .timeline-title {
+        .example-title {
             font-weight: bold;
             color: #555;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             display: block;
+            font-size: 18px;
+        }
+
+        /* ツイートを中央に配置 */
+        .tweet-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
@@ -124,18 +131,18 @@
             今すぐ投稿する
         </a>
 
-        <div class="timeline-box">
-            <span class="timeline-title">▼ みんなの投稿（#防災無線のある風景）</span>
+        <div class="example-box">
+            <span class="example-title">▼ 素敵な投稿のご紹介（ピックアップ）</span>
             
-            <a class="twitter-timeline" 
-               href="https://twitter.com/search?q=%23防災無線のある風景" 
-               data-lang="ja" 
-               data-height="600"
-               data-theme="light">
-               #防災無線のある風景 のツイート
-            </a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+            <div class="tweet-container">
+                <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">桜と防災無線<a href="https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E7%84%A1%E7%B7%9A?src=hash&amp;ref_src=twsrc%5Etfw">#防災無線</a> <a href="https://twitter.com/hashtag/%E9%98%B2%E7%81%BD%E7%84%A1%E7%B7%9A%E3%81%AE%E3%81%82%E3%82%8B%E9%A2%A8%E6%99%AF?src=hash&amp;ref_src=twsrc%5Etfw">#防災無線のある風景</a> <a href="https://t.co/B5N3B4B5Mh">pic.twitter.com/B5N3B4B5Mh</a></p>&mdash; むこがわ (@mkgw_0614) <a href="https://twitter.com/mkgw_0614/status/1511541470632681475?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote>
+                
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <p style="margin-top:20px; font-size:14px; color:#666;">
+                <a href="https://twitter.com/hashtag/防災無線のある風景?src=hash" target="_blank">もっと見る（Xで検索） &rarr;</a>
+            </p>
         </div>
     </div>
 
